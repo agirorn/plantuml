@@ -1,0 +1,49 @@
+{
+  "name": "plantuml",
+  "version": "0.0.0",
+  "description": "Convert PlantUML diagram text to SVG",
+  "main": "lib/plantuml.js",
+  "license": "MIT",
+  "keywords": [
+    "PlantUML",
+    "UML",
+    "Unified Modeling Language",
+    "Modeling",
+    "Sequence diagram",
+    "Usecase diagram",
+    "Class diagram",
+    "Activity diagram",
+    "Component diagram",
+    "State diagram",
+    "Object diagram",
+    "Deployment diagram",
+    "Timing diagram"
+  ],
+  "bugs": "https://github.com/agirorn/plantuml/issues",
+  "repository": "git://github.com/agirorn/plantuml.git",
+  "author": "Ægir Örn Símonarson <agirorn@gmail.com>",
+  "scripts": {
+    "ci": "yarn test && yarn lint",
+    "dev": "yardman .eslintrc* package.json lib spec 'yarn dev:exec'",
+    "dev:exec": "clear && yarn test && yarn lint",
+    "lint": "eslint lib spec .eslintrc.js",
+    "test": "jasmine"
+  },
+  "dependencies": {
+    "execa": "^4.0.0",
+    "get-stream": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "jasmine": "^3.5.0",
+    "jasmine-node-promise-matchers": "^0.2.0",
+    "jasmine-slow-reporter": "^0.1.0",
+    "jasmine-vow": "^0.0.3",
+    "metalsmith": "^2.3.0",
+    "metalsmith-markdown": "^1.3.0",
+    "yardman": "^0.0.9"
+  }
+}
