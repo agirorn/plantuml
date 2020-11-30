@@ -8,7 +8,7 @@ Convert [PlantUML] diagram text to SVG.
 ## Installation
 
 ```bash
-$ npm install metalsmith-plantuml
+$ npm install plantuml
 ```
 
 ## Usage
