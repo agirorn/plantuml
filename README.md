@@ -5,11 +5,17 @@
 
 Convert [PlantUML] diagram text to SVG.
 
+> Using PlantUML Version 1.2022.7
+
 ## Installation
 
 ```bash
 $ npm install plantuml
 ```
+
+## Dependencies
+
+Requires java and graphviz to be installed on the system.
 
 ## Usage
 
